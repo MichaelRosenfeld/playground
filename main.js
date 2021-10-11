@@ -148,7 +148,7 @@ capitalizeAll("Hi my name is Michael");
 function findLongestWord(string) {
     let stringSplit = string.split(' ');
     let longestWord = 0;
-    for(var i = 0; i < stringSplit.length; i++){
+    for(let i = 0; i < stringSplit.length; i++){
         if(stringSplit[i].length > longestWord){ 
             longestWord = stringSplit[i].length; 
         }
