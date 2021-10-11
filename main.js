@@ -48,12 +48,9 @@ for (let i = 0; i < names.length; i++) {
 
 // Looping over Arrays (For Testing uncomment lines.)
 
-const ages =[30, 21, 35, 19, 24, 25, 22, 21];
-
-
-
 // While loops
 
+const ages =[30, 21, 35, 19, 24, 25, 22, 21];
 // let i = 0;
 // let arrayLength = ages.length;
 
