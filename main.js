@@ -50,11 +50,12 @@ for (let i = 0; i < names.length; i++) {
 
 const ages =[30, 21, 35, 19, 24, 25, 22, 21];
 
-let i = 0;
-let arrayLength = ages.length;
 
 
 // While loops
+
+// let i = 0;
+// let arrayLength = ages.length;
 
 // while(i < arrayLength ) {
 //     console.log(ages[i]);
@@ -116,5 +117,45 @@ function joinToString (array) {
     let newArray = array.join()
     console.log(newArray);
 }
-
 joinToString(myColor);
+
+function reversedNum(num) {
+    console.log (
+        parseFloat(
+            num
+                .toString()
+                .split('')
+                .reverse()
+                .join('')
+        )
+    )
+}
+reversedNum(12345);
+
+function returnAlphabetical(string) {
+    let s = string.split('').sort();
+    console.log(s)
+}
+returnAlphabetical("hello");
+
+function capitalizeAll(string) {
+    const array = string.split(" ");
+    for (let i = 0; i < array.length; i++) {
+        array[i] = array[i].charAt(0).toUpperCase() + array[i].slice(1);
+    }
+    const str2 = array.join(" ");
+    console.log(str2);    
+}
+capitalizeAll("Hi my name is Michael");
+
+function findLongestWord(string) {
+    let stringSplit = string.split(' ');
+    let longestWord = 0;
+    for(var i = 0; i < stringSplit.length; i++){
+        if(stringSplit[i].length > longestWord){ 
+            longestWord = stringSplit[i].length; 
+        }
+    }
+    console.log(longestWord); 
+}
+findLongestWord("this and that and wololololololooo");
