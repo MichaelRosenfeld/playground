@@ -14,6 +14,7 @@ const ageDiff = myAge - ignasiAge;
 
 console.log(ageDiff);
 
+
 // Conditionals
 
 if (myAge > 21) {
@@ -30,6 +31,7 @@ if (myAge > ignasiAge) {
     console.log("You are younger than Ignasi");
 }
 
+
 // Sorting Arrays
 
 const names = ["Michael", "Tina", "Elisabeth", "Theresa", "Tim", "Mirko", "Dominik"];
@@ -43,12 +45,14 @@ for (let i = 0; i < names.length; i++) {
     console.log(names[i]);
 }
 
+
 // Looping over Arrays (For Testing uncomment lines.)
 
-const ages =[30, 21, 35, 19, 24, 25, 22];
+const ages =[30, 21, 35, 19, 24, 25, 22, 21];
 
 let i = 0;
 let arrayLength = ages.length;
+
 
 // While loops
 
@@ -64,6 +68,7 @@ let arrayLength = ages.length;
 //     i++;
 // }
 
+
 // For Loop
 
 for (let i = 0; i < arrayLength; i++ ) {
@@ -71,3 +76,45 @@ for (let i = 0; i < arrayLength; i++ ) {
         console.log(ages[i]);
     }
 }
+
+
+// Functions that use Arrays
+
+function lowestElement(array) {
+    const min = Math.min(...array);
+    console.log(min);
+}
+lowestElement(ages);
+
+function highestElement(array) {
+    const max = Math.max(...array);
+    console.log(max);
+}
+highestElement(ages);
+
+function printElement(array, index) {
+    console.log(array[index]);
+}
+printElement(ages, 5);
+
+
+function findDuplicates(array) {
+    let sortedArray = array.slice().sort();
+    let results = [];
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+        if (sortedArray[i + 1] === sortedArray[i]) {
+            results.push(sortedArray[i]);
+        }
+    }
+    console.log(results);
+}
+findDuplicates(ages);
+
+const myColor = ["Red", "Green", "White", "Black"];
+
+function joinToString (array) {
+    let newArray = array.join()
+    console.log(newArray);
+}
+
+joinToString(myColor);
