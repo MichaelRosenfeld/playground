@@ -43,6 +43,31 @@ for (let i = 0; i < names.length; i++) {
     console.log(names[i]);
 }
 
-// Looping over Arrays
+// Looping over Arrays (For Testing uncomment lines.)
 
-)
+const ages =[30, 21, 35, 19, 24, 25, 22];
+
+let i = 0;
+let arrayLength = ages.length;
+
+// While loops
+
+// while(i < arrayLength ) {
+//     console.log(ages[i]);
+//     i++;
+// }
+
+// while(i < arrayLength ) {
+//     if(ages[i] % 2 === 0){
+//         console.log(ages[i])    
+//     }
+//     i++;
+// }
+
+// For Loop
+
+for (let i = 0; i < arrayLength; i++ ) {
+    if(ages[i] % 2 === 0 ) {
+        console.log(ages[i]);
+    }
+}
