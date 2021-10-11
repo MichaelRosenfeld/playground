@@ -29,3 +29,20 @@ if (myAge > ignasiAge) {
 } else {
     console.log("You are younger than Ignasi");
 }
+
+// Sorting Arrays
+
+const names = ["Michael", "Tina", "Elisabeth", "Theresa", "Tim", "Mirko", "Dominik"];
+
+console.log(names);
+console.log(names.sort());
+console.log(names[0]);
+console.log(names[6]);
+
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+// Looping over Arrays
+
+)
